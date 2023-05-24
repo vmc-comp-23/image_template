@@ -1,2 +1,1 @@
-# image_template
-Customizer/Validator scripts
+Will upload ps1 soon
