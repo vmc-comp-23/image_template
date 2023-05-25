@@ -14,4 +14,4 @@ $vmdetails = [ordered]@{
 'VM image version' = 'value6'
 }
 
-$vmdetails.GetEnumerator() | Select Key, Value | Export-CSV -path c:\buildArtifacts\imagetattooinformation.csv
+$vmdetails.GetEnumerator() | Select Key, Value | Export-CSV -path c:\buildArtifacts\image_tattooing_information.csv
