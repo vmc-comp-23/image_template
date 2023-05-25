@@ -1,7 +1,8 @@
 #Use the following for the Customizer section of the Image Template
 #Choose the Run a powershell command customizer
 #Name it ImageTattooInformation
-#Paste the following in the inline command box seperated by commas
+#Copy and paste the following in the inline command box seperated by commas
+#Edit the 6 values as required - SEE vmdetails_example
 #No elevated permissions needed
 
 mkdir c:\buildArtifacts
