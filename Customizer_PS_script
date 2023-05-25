@@ -1,3 +1,17 @@
+#Use the following for the Customizer section of the Image Template
+#Choose the Run a powershell command customizer
+#Name it ImageTattooInformation
+#Paste the following in the inline command box seperated by commas
+
 mkdir c:\buildArtifacts
-new-item c:\buildArtifacts\imagetattooinginfo.txt
-set-content c:\buildArtifacts\imagetattooinginfo.txt "Original source of the image - Windows Server 2019 Datacenter published by Microsoft. Publish date - 5/24/23. Created by - Migdalia M. VM image definition - vmWinServer19. Vm image version - 1.2.0"
+
+$vmdetails = [ordered]@{
+'Original source of the image' = 'value1'
+'Publisher' = 'value2'
+'Date created' = 'value3'
+'Created by' = 'value4'
+'VM image definition' = 'value5'
+'VM image version' = 'value6'
+}
+
+$vmdetails.GetEnumerator() | Select Key, Value | Export-CSV -path c:\buildArtifacts\imagetattooinformation.csv
