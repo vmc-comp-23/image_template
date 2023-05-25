@@ -2,6 +2,7 @@
 #Choose the Run a powershell command customizer
 #Name it ImageTattooInformation
 #Paste the following in the inline command box seperated by commas
+#No elevated permissions needed
 
 mkdir c:\buildArtifacts
 
