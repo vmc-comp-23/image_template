@@ -1,10 +1,10 @@
 mkdir c:\buildArtifacts
 $vmdetails = [ordered]@{
-    'Original source of the image' = 'value1'
-    'Publisher' = 'value2'
-    'Date created' = 'value3'
-    'Created by' = 'value4'
-    'VM image definition' = 'value5'
-    'VM image version' = 'value6'
+    'Original source of the image' = 'Windows Server 2019 Datacenter'
+    'Publisher' = 'Microsoft'
+    'Date created' = '5/25/23'
+    'Created by' = 'Migdalia M'
+    'VM image definition' = 'vmWinServer19'
+    'VM image version' = '1.4.0'
     }
 $vmdetails.GetEnumerator() | Select Key, Value | Export-CSV -path c:\buildArtifacts\image_tattooing_information.csv
