@@ -1,1 +1,6 @@
-get-content c:\buildArtifacts\imagetattooinginfo.txt
+#Use the following for the Validator section of the Image Template
+#Choose the Run a powershell command validator
+#Name it Check_ImageTattooInfo
+#Paste the following in the inline command box
+
+Test-Path -path c:\buildArtifacts\image_tattooing_information.csv -PathType Leaf
