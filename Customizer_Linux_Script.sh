@@ -1,4 +1,3 @@
-#!/bin/sh
-mkdir buildArtifacts
-cd buildArtifacts
-touch image_tattooing.txt
+#!/bin/sh -e
+mkdir /etc/buildArtifacts
+touch /etc/buildArtifacts/image_tattooing.txt
