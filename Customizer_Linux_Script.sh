@@ -1,3 +1,5 @@
 #!/bin/sh -e
 mkdir /etc/buildArtifacts
-touch /etc/buildArtifacts/image_tattooing.txt
+cd /etc/buildArtifacts
+touch image_tattooing.txt
+sudo chmond 755 image_tattooing.txt
