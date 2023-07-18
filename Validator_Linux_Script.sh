@@ -1,9 +1,8 @@
 #!/bin/sh -e
-# Add preview banner to MOTD
-cat >> /etc/motd << EOF
+vi /etc/motd
 *******************************************************
 **            This VM was built from the:            **
 **      !! AZURE VM IMAGE BUILDER Custom Image !!    **
 **         You have just been Customized :-)         **
 *******************************************************
-EOF
+cat /etc/motd
